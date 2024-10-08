@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+ }
+
+.box {
+  height: 150px;
+  width: 300px;
+  border-radius: 30px;
+  animation: rotating-square 6s ease-in-out infinite alternate;
+}
+
+@keyframes rotating-square {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    background-color: blue;
+  }
+  25% {
+    transform: translate(calc(100vw - 300px), 0) rotate(180deg);
+    background-color: yellow;
+  }
+  50% {
+    transform: translate(calc(100vw - 300px), calc(100vh - 150px)) rotate(360deg);
+    background-color: red;
+  }
+  75% {
+    transform: translate(0, calc(100vh - 150px)) rotate(180deg);
+    background-color: palevioletred;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    background-color: orange;
+  }
+}

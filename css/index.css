@@ -1,0 +1,141 @@
+body {
+  background-image: url(/assets/images/bg-wallpaper-index.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: orange;
+  font-family: "SUSE", sans-serif;
+  margin: 10px;
+}
+
+.darken-bg {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.425);
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.title {
+  padding: 10px;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  text-decoration: underline orange;
+  margin: 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-top: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: orange;
+  font-size: 20px;
+}
+
+#profile-image {
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  border: 8px solid orange;
+  border-radius: 50%;
+}
+
+.main-list li {
+  font-size: 20px;
+  list-style: square;
+}
+
+.sub-list li {
+  list-style: circle;
+}
+
+.sub-list li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.sub-list li a:hover {
+  text-decoration: underline;
+  color: orange;
+  /* transition: ease-in 0.1s; */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 27px 0px;
+}
+
+footer {
+  margin-top: 20px;
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  backdrop-filter: blur(10px);
+  border-top: 1px;
+  border-right: 0px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-style: solid;
+  border-color: orange;
+}
+
+#footer-text {
+  opacity: 75%;
+}
+
+.detail-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+span {
+  color: white;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 30px;
+  }
+
+  #profile-image {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    border: 4px solid orange;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .profile {
+    height: 400px;
+  }
+
+  .main-list li {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,28 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  border-radius: 50%;
+  border-color: red;
+  border-style: solid;
+  animation: loading 2s ease-in-out infinite 0.5s;
+}
+
+@keyframes loading {
+  from {
+    height: 50px;
+    width: 50px;
+    border-width: 4px;
+  }
+  to {
+    height: 400px;
+    width: 400px;
+    border-width: 1px;
+    opacity: 0%;
+  }
+}

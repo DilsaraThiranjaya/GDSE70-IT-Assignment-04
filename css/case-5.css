@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  transform: translateX(-300vw);
+  animation: slide 14s linear infinite alternate;
+}
+
+img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-300vw);
+  }
+  25% {
+    transform: translateX(-300vw);
+  }
+  30% {
+    transform: translateX(-200vw);
+  }
+  50% {
+    transform: translateX(-200vw);
+  }
+  55% {
+    transform: translateX(-100vw);
+  }
+  75% {
+    transform: translateX(-100vw);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
