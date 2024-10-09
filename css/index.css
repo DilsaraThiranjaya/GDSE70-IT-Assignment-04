@@ -28,8 +28,7 @@ body {
 .profile {
   display: flex;
   flex-direction: column;
-  height: 500px;
-  width: 100%;
+  height: 750px;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(10px);
@@ -40,44 +39,137 @@ body {
   border-style: solid;
   border-color: orange;
   font-size: 20px;
+  margin: 20px;
 }
 
 #profile-image {
-  margin-top: 20px;
   width: 250px;
   height: 250px;
   border: 8px solid orange;
   border-radius: 50%;
 }
 
-.main-list li {
+.social-media-box {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px;
+  border-right: 0px;
+  border-bottom: 3px;
+  border-left: 0px;
+  border-style: solid;
+  border-color: orange;
+  border-radius: 30px;
+  padding-bottom: 20px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow-me-text {
   font-size: 20px;
-  list-style: square;
+  font-family: "SUSE", sans-serif;
+  font-weight: 500;
+  text-align: center;
 }
 
-.sub-list li {
-  list-style: circle;
-}
-
-.sub-list li a {
+.social-media a {
   text-decoration: none;
-  color: whitesmoke;
 }
 
-.sub-list li a:hover {
-  text-decoration: underline;
-  color: orange;
-  /* transition: ease-in 0.1s; */
+.icons {
+  font-size: 30px;
+  color: white;
+  margin: 5px;
+}
+
+.icons:hover {
+  scale: 1.2;
 }
 
 .content {
   display: flex;
+  padding: 50px 0px;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 27px 0px;
+  align-items: center;
+}
+
+.card {
+  height: 200px;
+  margin: 10px;
+  padding: 2px;
+  border: 3px solid orange;
+  border-radius: 30px;
+  position: relative;
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  filter: brightness(90%);
+  transition: filter 0.5s ease-in-out 0.1s;
+}
+
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  font-family: "SUSE", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  transition: transform 0.5s ease-in-out 0.1s;
+  transition: font-size 0.5s ease-in-out 0.1s;
+  transition: font-weight 0.5s ease-in-out 0.1s;
+}
+
+.card-button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0%;
+  transition: opacity 0.5s ease-in-out 0.1s;
+}
+
+.card-button:hover {
+  cursor: pointer;
+  border: 3px solid orange;
+  background-color: white;
+  color: orange;
+}
+
+.card:hover .card-image {
+  filter: brightness(30%);
+}
+
+.card:hover .card-text {
+  font-size: 26px;
+  font-weight: 500;
+  transform: translate(-50%, -190%);
+}
+
+.card:hover .card-button {
+  opacity: 100%;
 }
 
 footer {
-  margin-top: 20px;
   height: 50px;
   width: 100%;
   justify-content: center;
@@ -97,7 +189,6 @@ footer {
 }
 
 .detail-container {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,10 +223,14 @@ h2 {
   }
 
   .profile {
-    height: 400px;
+    height: 700px;
   }
 
   .main-list li {
     font-size: 18px;
+  }
+
+  .detail-container {
+
   }
 }

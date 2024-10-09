@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow: hidden;
 }
 
 .container {
@@ -16,23 +17,23 @@ body {
 
 @keyframes rotating-square {
   0% {
-    transform: translate(0, 0) rotate(0deg);
+    transform: translate(30px, 30px) rotate(0deg);
     background-color: blue;
   }
   25% {
-    transform: translate(calc(100vw - 300px), 0) rotate(180deg);
+    transform: translate(calc(100vw - 330px), 30px) rotate(180deg);
     background-color: yellow;
   }
   50% {
-    transform: translate(calc(100vw - 300px), calc(100vh - 150px)) rotate(360deg);
+    transform: translate(calc(100vw - 330px), calc(100vh - 180px)) rotate(360deg);
     background-color: red;
   }
   75% {
-    transform: translate(0, calc(100vh - 150px)) rotate(180deg);
+    transform: translate(30px, calc(100vh - 180px)) rotate(180deg);
     background-color: palevioletred;
   }
   100% {
-    transform: translate(0, 0) rotate(0deg);
+    transform: translate(30px, 30px) rotate(0deg);
     background-color: orange;
   }
 }
