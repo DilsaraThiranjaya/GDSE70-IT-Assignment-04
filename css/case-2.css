@@ -25,7 +25,6 @@ body {
   background-color: white;
   border-radius: 50%;
   rotate: 45deg;
-  /* transition: rotate 1s ease-in 0s; */
 }
 
 .red-quarter-circle {
@@ -57,15 +56,6 @@ p {
 }
 
 .content:hover .rear-circle {
-  /* rotate: 405deg; */
-  animation: rotate-circle 1s ease-in 1;
-}
-
-@keyframes rotate-circle {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  transform: rotate(360deg);
+  transition: transform 1s ease-in;
 }
